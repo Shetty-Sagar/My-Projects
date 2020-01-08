@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Login Form</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background-image: url("https://www.bing.com/images/search?view=detailV2&ccid=kYI01yVu&id=BF3C8DB8C01E742CBE152A520D58BBFAC5D4D8C2&thid=OIP.kYI01yVumR9thoHOEqpTsQHaJv&mediaurl=https%3a%2f%2fcdn.britannica.com%2f56%2f148856-004-2F59E2D9.jpg&exph=450&expw=342&q=apj+abdul+kalam&simid=608049355670489677&selectedIndex=5");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: cyan;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-3 col-md-6">
+                <h3>Please Login Your Account Here...</h3>
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ lform }}
+                    <center>
+                        <input type="submit" value="Login" class="btn btn-success">
+                        <input type="reset" value="clear" class="btn btn-danger"><br>
+                        <a href="/reg/">Create New Account</a>
+                    </center>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>
